@@ -116,7 +116,7 @@ class my_evaluation:
         if self.confusion_matrix==None:
             self.confusion()
         if average == "micro":
-            return accuracy()
+            return self.accuracy()
         
         elif average == "weighted":
             total = 0
